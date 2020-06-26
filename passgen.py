@@ -27,12 +27,12 @@ class PassGen:
     def question(self, target):
         answers = {}
 
-        answers['Ism'] = self.prompt('{}\   ismini kiriting: '.format(target))
-        answers['Familiya'] = self.prompt('{}\   familiyasini kiriting: '.format(target))
-        answers['nik nomi'] = self.prompt('{}\   nik nomini kiriting: '.format(target))
+        answers['Ism'] = self.prompt('{} ismini kiriting: '.format(target))
+        answers['Familiya'] = self.prompt('{} familiyasini kiriting: '.format(target))
+        answers['nik nomi'] = self.prompt('{} nik nomini kiriting: '.format(target))
 
         while True:
-            bday = self.prompt('{}\  tugilgan sanasini kiriting (dd.mm.yyyy): '.format(target))
+            bday = self.prompt('{} tugilgan sanasini kiriting (dd.mm.yyyy): '.format(target))
 
             if not len(bday.strip()):
                 break
