@@ -29,10 +29,10 @@ class PassGen:
 
         answers['Ism'] = self.prompt('{}\ning ismini kiriting: '.format(target))
         answers['Familiya'] = self.prompt('{}\ning familiyasini kiriting: '.format(target))
-        answers['nik nomi'] = self.prompt('Enter {}\ning nik nomini: '.format(target))
+        answers['nik nomi'] = self.prompt('{}\ning nik nomini kiriting: '.format(target))
 
         while True:
-            bday = self.prompt('{}\'ning tugilgan sanasini kiriting (dd.mm.yyyy): '.format(target))
+            bday = self.prompt('{}\ning tugilgan sanasini kiriting (dd.mm.yyyy): '.format(target))
 
             if not len(bday.strip()):
                 break
@@ -169,7 +169,7 @@ class PassGen:
                                 self.passwords.append(q)     
         
     def generator(self, ignore_additional = True):
-        self.target = self.question('Nishon')  
+        self.target = self.question('Jabrlanuvchi')  
         print('\n')
 
         self.spouse = self.question('Hotini')
