@@ -172,13 +172,13 @@ class PassGen:
         self.target = self.question('Jabrlanuvchi')  
         print('\n')
 
-        self.spouse = self.question('Hotini')
+        self.spouse = self.question('Hotinining')
         print('\n')
 
-        self.child = self.question('Bolasi')
+        self.child = self.question('Bolasining')
         print('\n')
 
-        self.pet = self.question('Yaxshi korgan hayvoni')
+        self.pet = self.question('Yaxshi korgan hayvonining')
         print('\n')
 
         print('Generatlanmoqda... \nIl\timos ozgina kuting.')
@@ -192,7 +192,7 @@ class PassGen:
         with open(output_file, 'wt') as f:
             for pwd in self.passwords:
                 if not self.silent:
-                    print('Nashrlanmoqda ...')
+                    print('Tayyorlanmoqda ...')
                 f.write('{}\n'.format(pwd))
 
         if not ignore_additional:
