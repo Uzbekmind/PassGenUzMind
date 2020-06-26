@@ -27,9 +27,9 @@ class PassGen:
     def question(self, target):
         answers = {}
 
-        answers['Ism'] = self.prompt('{}\'ning ismini kiriting: '.format(target))
-        answers['Familiya'] = self.prompt('{}\'ning familiyasini kiriting: '.format(target))
-        answers['nik nomi'] = self.prompt('Enter {}\'s nik nomini: '.format(target))
+        answers['Ism'] = self.prompt('{}\ning ismini kiriting: '.format(target))
+        answers['Familiya'] = self.prompt('{}\ning familiyasini kiriting: '.format(target))
+        answers['nik nomi'] = self.prompt('Enter {}\ning nik nomini: '.format(target))
 
         while True:
             bday = self.prompt('{}\'ning tugilgan sanasini kiriting (dd.mm.yyyy): '.format(target))
